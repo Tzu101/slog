@@ -4,6 +4,13 @@
 #include <string>
 #include <vector>
 
+#include "slog_types.h"
+
+#if defined(_WIN32)
+#define NOGDI   // All GDI defines and routines
+#define NOUSER  // All USER defines and routines
+#endif
+
 #include "spdlog/sinks/basic_file_sink.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 #include "spdlog/spdlog.h"
