@@ -13,6 +13,6 @@ enum Level {
     FATAL
 };
 
-using callback = void(Level level, const std::string& category, const std::string& message);
+using callback = void(Level level, const std::string& message);
 
 }  // namespace slog
